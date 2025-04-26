@@ -1,33 +1,47 @@
-# Live TV and Movie APP
+# WEB TV APP
 
-- TV and Movie app that can load .m3u8 files and display live streams through HLS/HTTP links. 
-- Uses TMDB API to retrieve movie information such as year, name, and image. 
-- Developed 2 versions one with AWS backend and another with Firebase backend.
+A Flutter-based web application for streaming IPTV content, movies, and TV shows.
 
-<h2>Overview of how the app works:</h2>
-<details>
-<summary>On-Demand Movie and TV Show Section: </summary>
-  <ul>
-  <li> The on demand section is split into TV Series and Movies which loads a an initial grid of movies or tv series depending on which the user chooses. The user can also search for Movies or TV Series and the app fetches the "The Movie Data Base" using their API to return all matching movie or tv show names. From there once the user selects the movie/show it brings them to a detail page which has a play button that then scrapes the internet for existing links matching the movie id from different sites and returns those links to play be able to select and play the desired link.
-  </ul>
-</details>
+## Features
 
-<details>
-<summary>Live TV Channels Section: </summary>
-  <ul>
-    <li>  The live TV Channel section allows users to watch live TV channels by loading .m3u8 file(s) specified in the settings which contain(s) a list of HLS/HTTP/HTTPS links then displays the channel name on the left and stream of the chosen channel link in a container to the right, the streaming links are abstracted from the user.
-  </ul>
-</details>
+- **M3U Playlist Support**: Load and view channels from M3U playlists
+- **Xtream API Integration**: Connect to Xtream IPTV providers
+- **TMDB Integration**: Fetch high-quality movie and TV show metadata and images
+- **Persistent Storage**: Save playlists and connections between app restarts
+- **Responsive Design**: Works on web browsers and mobile devices
+- **Video Playback**: Stream live TV, movies, and TV show episodes
 
+## Key Components
 
-<br/>
+### M3U Playlist Support
+- Add playlists via URL
+- Browse channels by category
+- Stream content directly in the app
 
+### Xtream API Integration
+- Connect to Xtream providers with server URL, username, and password
+- Browse Live TV, Movies, and Series categories
+- View detailed information about content
 
+### TMDB Integration
+- Automatic fallback to TMDB for broken images
+- Direct TMDB ID lookup for accurate metadata
+- High-quality posters and backdrop images
+- Detailed movie and TV show information
 
-https://github.com/dordazrodriguez/IPTV-and-Movie-App/assets/79417457/d3fa1633-e1ac-4d77-8e4d-454ae7d89a38
-<p>** App may seem sluggish due to it running on an emulated android TV device in the screen recording above. App was also designed to be able to use a remote instead of cursor for use on actual Android TV devices. **</p>
+## Getting Started
 
-![](./Assets/Screen_Recording_Compressed.mp4)
-<video src="https://github.com/dordazrodriguez/IPTV-and-Movie-App/blob/main/Assets/Screen_Recording_Compressed.mp4" controls="controls" style="max-width: 730px;"></video>
-![alt text](./Assets/tv.png)
+1. Clone this repository
+2. Run `flutter pub get` to install dependencies
+3. Add your TMDB API key in `lib/config.dart`
+4. Run the app with `flutter run -d chrome`
 
+## Requirements
+
+- Flutter SDK
+- TMDB API key (get one at https://www.themoviedb.org/settings/api)
+- Web browser or mobile device
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
