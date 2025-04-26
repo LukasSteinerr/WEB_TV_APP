@@ -1,8 +1,6 @@
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:html/parser.dart';
-import 'package:tvapp/src/movies/models/movie_id_model.dart';
 import 'package:tvapp/src/movies/network/api_provider.dart';
 
 class Scraping {

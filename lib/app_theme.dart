@@ -36,22 +36,22 @@ class AppTheme {
   );
 
   static final TextTheme lightTextTheme = TextTheme(
-    title: _titleLight,
-    subtitle: _subTitleLight,
-    button: _buttonLight,
-    display1: _greetingLight,
-    display2: _searchLight,
-    body1: _selectedTabLight,
-    body2: _unSelectedTabLight,
+    headline6: _titleLight,
+    subtitle2: _subTitleLight,
+    labelLarge: _buttonLight,
+    headline4: _greetingLight,
+    headline3: _searchLight,
+    bodyText2: _selectedTabLight,
+    bodyText1: _unSelectedTabLight,
   );
 
   static final TextTheme darkTextTheme = TextTheme(
-    title: _titleDark,
-    subtitle: _subTitleDark,
-    button: _buttonDark,
-    display1: _greetingDark,
-    body1: _selectedTabDark,
-    body2: _unSelectedTabDark,
+    headline6: _titleDark,
+    subtitle2: _subTitleDark,
+    labelLarge: _buttonDark,
+    headline4: _greetingDark,
+    bodyText2: _selectedTabDark,
+    bodyText1: _unSelectedTabDark,
   );
 
   static final TextStyle _titleLight = TextStyle(

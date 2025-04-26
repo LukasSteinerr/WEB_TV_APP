@@ -45,20 +45,16 @@ class _CustomCardState extends State<CustomCard>
   void _onFocusChange() {
     if (_node.hasFocus) {
       _controller.forward();
-      if (widget.onFocus != null) {
-        widget.onFocus();
-      }
-    } else {
+      widget.onFocus();
+        } else {
       _controller.reverse();
     }
   }
 
   void _onTap() {
     _node.requestFocus();
-    if (widget.onTap != null) {
-      widget.onTap();
+    widget.onTap();
     }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -115,7 +111,7 @@ class _CustomCardState extends State<CustomCard>
                               child: new Container(
                                 width: 250.0,
                                 child: new Text(
-                                    widget.year == null || widget.year == ""
+                                    widget.year == ""
                                         ? ""
                                         : widget.year.substring(0, 4),
                                     style: new TextStyle(

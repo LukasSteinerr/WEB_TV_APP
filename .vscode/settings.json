@@ -1,4 +1,5 @@
 {
     "dart.flutterAndroidX": true,
-    "dart.flutterCreateAndroidLanguage": "java"
+    "dart.flutterCreateAndroidLanguage": "java",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

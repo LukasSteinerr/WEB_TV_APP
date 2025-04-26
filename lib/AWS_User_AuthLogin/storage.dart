@@ -29,11 +29,9 @@ class Storage extends CognitoStorage {
   @override
   Future removeItem(String key) async {
     final item = getItem(key);
-    if (item != null) {
-      await _prefs.remove(key);
-      return item;
-    }
-    return null;
+    await _prefs.remove(key);
+    return item;
+      return null;
   }
 
   @override

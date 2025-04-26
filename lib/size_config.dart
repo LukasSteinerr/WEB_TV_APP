@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class SizeConfig {
-  static double _screenWidth;
-  static double _screenHeight;
+  static double _screenWidth = 0;
+  static double _screenHeight = 0;
   static double _blockSizeHorizontal = 0;
   static double _blockSizeVertical = 0;
 
-  static double textMultiplier;
-  static double imageSizeMultiplier;
-  static double heightMultiplier;
-  static double widthMultiplier;
+  static double textMultiplier = 1;
+  static double imageSizeMultiplier = 1;
+  static double heightMultiplier = 1;
+  static double widthMultiplier = 1;
   static bool isPortrait = true;
   static bool isMobilePortrait = false;
 

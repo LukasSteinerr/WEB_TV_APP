@@ -1,10 +1,7 @@
-import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:tvapp/src/movies/blocs/data_bloc.dart';
 import 'package:tvapp/src/movies/blocs/live_tv_bloc.dart';
-import 'package:tvapp/src/movies/blocs/search_bloc.dart';
 import 'package:tvapp/src/movies/live_tv.dart';
 import 'package:tvapp/src/movies/movies.dart';
 import 'package:tvapp/src/movies/ui/data_visualizer.dart';

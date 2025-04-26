@@ -21,16 +21,13 @@ class UserService {
     _userPool.storage = storage;
 
     _cognitoUser = await _userPool.getCurrentUser();
-    if (_cognitoUser == null) {
-      return false;
-    }
     _session = await _cognitoUser.getSession();
     return _session.isValid();
   }
 
   /// Get existing user from session with his/her attributes
   Future<User> getCurrentUser() async {
-    if (_cognitoUser == null || _session == null) {
+    if (_session == null) {
       return null;
     }
     if (!_session.isValid()) {
@@ -47,7 +44,7 @@ class UserService {
 
   /// Retrieve user credentials -- for use with other AWS services
   Future<CognitoCredentials> getCredentials() async {
-    if (_cognitoUser == null || _session == null) {
+    if (_session == null) {
       return null;
     }
 
@@ -104,7 +101,7 @@ class UserService {
 
   /// Check if user's current session is valid
   Future<bool> checkAuthenticated() async {
-    if (_cognitoUser == null || _session == null) {
+    if (_session == null) {
       return false;
     }
     return _session.isValid();
@@ -128,11 +125,7 @@ class UserService {
   }
 
   Future<void> signOut() async {
-    if (credentials != null) {
-      await credentials.resetAwsCredentials();
-    }
-    if (_cognitoUser != null) {
+    await credentials.resetAwsCredentials();
       return _cognitoUser.signOut();
     }
-  }
 }

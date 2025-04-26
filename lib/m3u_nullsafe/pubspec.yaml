@@ -1,0 +1,10 @@
+name: m3u_nullsafe
+description: A null-safe version of the m3u package
+version: 1.0.0
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter

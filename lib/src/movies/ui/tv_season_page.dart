@@ -107,11 +107,9 @@ class _TVSeasonPageState extends State<TVSeasonPage>
 
   Widget getTabBody(AsyncSnapshot<Seasons> snapshot, int i) {
     String url = "https://dummyimage.com/16:9x1080/";
-    if (snapshot.data.episodes[i].stillPath != null) {
-      url =
-          'https://image.tmdb.org/t/p/w500${snapshot.data.episodes[i].stillPath}';
-    }
-    return Scaffold(
+    url =
+        'https://image.tmdb.org/t/p/w500${snapshot.data.episodes[i].stillPath}';
+      return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.play_arrow),
         onPressed: () {

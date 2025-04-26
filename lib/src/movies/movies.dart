@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:tvapp/size_config.dart';
 import 'package:tvapp/src/movies/blocs/data_bloc.dart';
 import 'package:tvapp/src/movies/live_tv.dart';
 import 'package:tvapp/src/movies/models/genre_model.dart';
@@ -9,7 +8,6 @@ import 'package:tvapp/src/movies/ui/data_visualizer.dart';
 import 'package:tvapp/src/movies/ui/search_page.dart';
 import 'package:tvapp/widgets/create_Drawer.dart';
 import 'package:tvapp/widgets/testing.dart';
-import './ui/custom_search_delegate.dart';
 import 'blocs/live_tv_bloc.dart';
 import 'package:tvapp/const.dart';
 

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tvapp/AWS_User_AuthLogin/screens/confirmation_screen.dart';
 import 'package:tvapp/AWS_User_AuthLogin/screens/login_screen.dart';
 import 'package:tvapp/AWS_User_AuthLogin/screens/signup_screen.dart';
 import 'package:tvapp/globals.dart' as gb;
-import 'package:path/path.dart';
 
 class AuthPage extends StatefulWidget {
   AuthPage({Key key, this.title}) : super(key: key);

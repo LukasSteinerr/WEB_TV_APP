@@ -8,7 +8,10 @@ const IdentityPoolId = 'us-east-2:58ebf09c-38a4-4e20-add4-5a47a2b03095';
 
 // Setup endpoints here:
 const Region = 'us-east-2';
-const Endpoint =
-'https://esports-test.auth.us-east-2.amazoncognito.com';
+const Endpoint = 'https://esports-test.auth.us-east-2.amazoncognito.com';
 
 final userPool = CognitoUserPool(AWSUserPoolId, AWSClientId);
+
+// TMDB API Configuration
+const tmdbApiKey =
+    '9e92699e050cb40728b59728c3115455'; // Replace with your actual TMDB API key
